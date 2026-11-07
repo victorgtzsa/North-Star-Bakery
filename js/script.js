@@ -1,3 +1,6 @@
+
+//this function is used to display the product and description based on the selected holiday
+
 const holidayProducts = {
     christmas: {
         product: "Gingerbread Cookies",
@@ -37,6 +40,9 @@ document
     .getElementById("holiday")
     .addEventListener("change", displayHolidayProduct);
 
+    
+//this function is used to validate the email input in the contact form
+
     document.querySelector("form")
 .addEventListener("submit", validateForm);
 
@@ -49,7 +55,8 @@ function validateForm(event) {
         document.getElementById("emailError");
 
     const emailPattern =
-        /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+       /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+       
 
     error.textContent = "";
 
@@ -65,3 +72,5 @@ function validateForm(event) {
 
     return true;
 }
+
+
